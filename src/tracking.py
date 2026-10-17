@@ -65,16 +65,30 @@ class ExperimentTracker:
             handler.setFormatter(formatter)
             self.logger.addHandler(handler)
 
-    def _run_dir(self, run_name):
-        """A fresh TensorBoard folder for this run (old files of the same run are removed first)."""
+    @staticmethod
+    def run_name(exp_id, model):
+        """Name of the TensorBoard folder of an experiment."""
+        return f"{exp_id}_{model}".replace(" ", "_").replace("/", "-")
+
+    def reset_run(self, run_name):
+        """Delete the old TensorBoard files of a run and return its empty folder."""
         run_dir = self.tb_dir / run_name
         if run_dir.exists():
             shutil.rmtree(run_dir)
         run_dir.mkdir(parents=True)
         return run_dir
 
-    def log_experiment(self, exp_id, step, model, params, features, split, eval_set, metrics, seconds, observations=""):
-        """Add one experiment to the CSV table, the text log and TensorBoard."""
+    def _run_dir(self, run_name):
+        """A fresh TensorBoard folder for this run (old files of the same run are removed first)."""
+        return self.reset_run(run_name)
+
+    def log_experiment(self, exp_id, step, model, params, features, split, eval_set, metrics, seconds, observations="",
+                       keep_existing_run=False):
+        """
+        Add one experiment to the CSV table, the text log and TensorBoard.
+        keep_existing_run=True keeps the files already in the run folder (used for neural networks,
+        where Keras writes the epoch-by-epoch curves into the same folder before this is called).
+        """
         # 1) CSV table (a row with the same exp_id is replaced, so re-running the notebook is safe)
         row = {"exp_id": exp_id, "step": step, "model": model,
                "hyperparameters": str(params), "features": features, "split": split, "eval_set": eval_set,
@@ -86,10 +100,12 @@ class ExperimentTracker:
         table[TABLE_COLUMNS].to_csv(self.csv_path, index=False)
 
         # 2) TensorBoard: hyperparameters + final metrics of this run (shows in the HParams tab)
-        run_name = f"{exp_id}_{model}".replace(" ", "_").replace("/", "-")
+        run_name = self.run_name(exp_id, model)
         hparams = {"model": model, "features": features}
         hparams.update({k: (v if isinstance(v, (int, float, str, bool)) else str(v)) for k, v in params.items()})
-        with tf.summary.create_file_writer(str(self._run_dir(run_name))).as_default():
+        run_dir = (self.tb_dir / run_name) if keep_existing_run else self._run_dir(run_name)
+        run_dir.mkdir(parents=True, exist_ok=True)
+        with tf.summary.create_file_writer(str(run_dir)).as_default():
             hp.hparams(hparams)
             for name, value in metrics.items():
                 tf.summary.scalar(name, float(value), step=1)
