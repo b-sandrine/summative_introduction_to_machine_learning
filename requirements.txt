@@ -1,0 +1,9 @@
+# Libraries used in this project (add new ones here as soon as the notebook needs them)
+numpy
+pandas
+matplotlib
+scikit-learn
+joblib
+tensorflow
+tensorboard
+jupyter
