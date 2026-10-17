@@ -1,0 +1,23 @@
+# Raw dataset: the assignment says NOT to commit it (it goes to Google Drive as a zip)
+dataset/
+data/
+*.zip
+
+# Trained models: also stored on Google Drive. Keep the folder, ignore the files inside it.
+models/*
+!models/.gitkeep
+
+# Training logs that can be recreated by re-running the notebook
+logs/tensorboard/
+
+# Python, Jupyter and OS files
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# Secrets
+.env
+*.key
