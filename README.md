@@ -5,7 +5,7 @@ Machine Learning summative project, African Leadership University.
 | Deliverable | Link |
 |---|---|
 | GitHub repository | https://github.com/b-sandrine/summative_introduction_to_machine_learning |
-| Google Drive folder (dataset + saved models) | *(add after Step 9)* |
+| Google Drive folder (dataset + saved models) | https://drive.google.com/drive/folders/146lM7T1nxHQci1VZSS6UHOByGKVHfQxW?usp=sharing |
 | Presentation video | *(add after the video is recorded)* |
 
 ## Problem statement
