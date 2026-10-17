@@ -1,0 +1,7 @@
+model,cut-off rule,cut-off,people flagged,recall,precision,F1,accuracy,false alarms per 1000,missed cases per 1000
+Gradient boosting (tuned) (T08),cut-off 0.5,0.5,38.4%,0.793,0.316,0.452,0.706,263,32
+Gradient boosting (tuned) (T08),best F1 on validation,0.642,24.3%,0.609,0.384,0.471,0.791,149,60
+Gradient boosting (tuned) (T08),recall >= 0.80 on validation,0.492,39.2%,0.798,0.312,0.448,0.699,270,31
+Neural net 64-32 + dropout 0.3 (D04),cut-off 0.5,0.5,2.8%,0.112,0.615,0.19,0.853,11,136
+Neural net 64-32 + dropout 0.3 (D04),best F1 on validation,0.236,25.3%,0.631,0.382,0.476,0.787,156,56
+Neural net 64-32 + dropout 0.3 (D04),recall >= 0.80 on validation,0.155,38.8%,0.796,0.314,0.451,0.703,266,31

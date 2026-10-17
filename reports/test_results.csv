@@ -1,0 +1,4 @@
+model,test accuracy,test precision,test recall,test f1,test roc_auc,test pr_auc,val ROC-AUC,test minus val ROC-AUC
+Dummy baseline (T01),0.847,0.0,0.0,0.0,0.5,0.153,0.5,0.0
+Gradient boosting (tuned) (T08),0.7055,0.3157,0.7926,0.4516,0.8159,0.437,0.8199,-0.004
+Neural net 64-32 + dropout 0.3 (D04),0.8535,0.615,0.1123,0.1898,0.8172,0.4403,0.8199,-0.0027

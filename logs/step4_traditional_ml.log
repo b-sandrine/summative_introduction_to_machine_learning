@@ -1,15 +1,15 @@
-16:34:24 | T01 | Dummy baseline | acc 0.847 | precision 0.000 | recall 0.000 | F1 0.000 | ROC-AUC 0.500 | PR-AUC 0.153 | 0.0s
-16:34:24 | T02 | Logistic regression | acc 0.719 | precision 0.323 | recall 0.766 | F1 0.455 | ROC-AUC 0.815 | PR-AUC 0.430 | 0.4s
-16:34:37 | T03 | Random forest | acc 0.843 | precision 0.461 | recall 0.156 | F1 0.233 | ROC-AUC 0.779 | PR-AUC 0.358 | 12.1s
-16:34:40 | T04 | Gradient boosting | acc 0.710 | precision 0.320 | recall 0.796 | F1 0.457 | ROC-AUC 0.820 | PR-AUC 0.445 | 3.0s
-16:35:36 | T05 | SVM (RBF) | acc 0.712 | precision 0.317 | recall 0.766 | F1 0.449 | ROC-AUC 0.799 | PR-AUC 0.371 | 10.1s
-16:35:43 | curve logged to TensorBoard run 'curve_gradient_boosting': train_loss, val_loss, val_roc_auc
-16:35:46 | curve logged to TensorBoard run 'curve_random_forest': val_roc_auc
-16:35:54 | curve logged to TensorBoard run 'curve_logreg_grid': cv_roc_auc
-16:35:55 | T06 | Logistic regression (tuned) | acc 0.719 | precision 0.323 | recall 0.766 | F1 0.454 | ROC-AUC 0.815 | PR-AUC 0.431 | 0.4s
-16:39:44 | T07 | Random forest (tuned) | acc 0.724 | precision 0.328 | recall 0.767 | F1 0.460 | ROC-AUC 0.817 | PR-AUC 0.442 | 15.9s
-16:40:26 | T08 | Gradient boosting (tuned) | acc 0.708 | precision 0.318 | recall 0.792 | F1 0.454 | ROC-AUC 0.820 | PR-AUC 0.446 | 3.9s
-16:40:30 | T09 | Gradient boosting (tuned), no engineered features | acc 0.708 | precision 0.318 | recall 0.794 | F1 0.454 | ROC-AUC 0.819 | PR-AUC 0.446 | 3.4s
-16:40:34 | T10 | Gradient boosting (tuned), no class weights | acc 0.855 | precision 0.584 | recall 0.171 | F1 0.264 | ROC-AUC 0.820 | PR-AUC 0.445 | 4.5s
-16:40:44 | T11 | Gradient boosting (tuned) + SMOTE | acc 0.852 | precision 0.535 | recall 0.255 | F1 0.345 | ROC-AUC 0.818 | PR-AUC 0.443 | 8.6s
-16:41:06 | curve logged to TensorBoard run 'curve_learning_size_gradient_boosting': train_roc_auc, cv_roc_auc
+18:07:59 | T01 | Dummy baseline | acc 0.847 | precision 0.000 | recall 0.000 | F1 0.000 | ROC-AUC 0.500 | PR-AUC 0.153 | 0.0s
+18:07:59 | T02 | Logistic regression | acc 0.719 | precision 0.323 | recall 0.766 | F1 0.455 | ROC-AUC 0.815 | PR-AUC 0.430 | 0.4s
+18:08:10 | T03 | Random forest | acc 0.843 | precision 0.461 | recall 0.156 | F1 0.233 | ROC-AUC 0.779 | PR-AUC 0.358 | 9.8s
+18:08:12 | T04 | Gradient boosting | acc 0.710 | precision 0.320 | recall 0.796 | F1 0.457 | ROC-AUC 0.820 | PR-AUC 0.445 | 2.4s
+18:09:10 | T05 | SVM (RBF) | acc 0.712 | precision 0.317 | recall 0.766 | F1 0.449 | ROC-AUC 0.799 | PR-AUC 0.371 | 10.2s
+18:09:18 | curve logged to TensorBoard run 'curve_gradient_boosting': train_loss, val_loss, val_roc_auc
+18:09:21 | curve logged to TensorBoard run 'curve_random_forest': val_roc_auc
+18:09:30 | curve logged to TensorBoard run 'curve_logreg_grid': cv_roc_auc
+18:09:31 | T06 | Logistic regression (tuned) | acc 0.719 | precision 0.323 | recall 0.766 | F1 0.454 | ROC-AUC 0.815 | PR-AUC 0.431 | 0.4s
+18:13:03 | T07 | Random forest (tuned) | acc 0.724 | precision 0.328 | recall 0.767 | F1 0.460 | ROC-AUC 0.817 | PR-AUC 0.442 | 13.1s
+18:13:38 | T08 | Gradient boosting (tuned) | acc 0.708 | precision 0.318 | recall 0.792 | F1 0.454 | ROC-AUC 0.820 | PR-AUC 0.446 | 3.4s
+18:13:42 | T09 | Gradient boosting (tuned), no engineered features | acc 0.708 | precision 0.318 | recall 0.794 | F1 0.454 | ROC-AUC 0.819 | PR-AUC 0.446 | 3.1s
+18:13:47 | T10 | Gradient boosting (tuned), no class weights | acc 0.855 | precision 0.584 | recall 0.171 | F1 0.264 | ROC-AUC 0.820 | PR-AUC 0.445 | 4.4s
+18:13:57 | T11 | Gradient boosting (tuned) + SMOTE | acc 0.852 | precision 0.535 | recall 0.255 | F1 0.345 | ROC-AUC 0.818 | PR-AUC 0.443 | 9.1s
+18:14:16 | curve logged to TensorBoard run 'curve_learning_size_gradient_boosting': train_roc_auc, cv_roc_auc
