@@ -7,9 +7,6 @@ data/
 models/*
 !models/.gitkeep
 
-# Training logs that can be recreated by re-running the notebook
-logs/tensorboard/
-
 # Python, Jupyter and OS files
 .venv/
 venv/
