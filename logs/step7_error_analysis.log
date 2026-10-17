@@ -1,4 +1,4 @@
-18:20:26 | TEST | Dummy baseline (T01) | {'test accuracy': 0.847, 'test precision': 0.0, 'test recall': 0.0, 'test f1': 0.0, 'test roc_auc': 0.5, 'test pr_auc': 0.153, 'val ROC-AUC': 0.5, 'test minus val ROC-AUC': 0.0}
-18:20:26 | TEST | Gradient boosting (tuned) (T08) | {'test accuracy': 0.7055, 'test precision': 0.3157, 'test recall': 0.7926, 'test f1': 0.4516, 'test roc_auc': 0.8159, 'test pr_auc': 0.437, 'val ROC-AUC': 0.8199, 'test minus val ROC-AUC': -0.004}
-18:20:26 | TEST | Neural net 64-32 + dropout 0.3 (D04) | {'test accuracy': 0.8535, 'test precision': 0.615, 'test recall': 0.1123, 'test f1': 0.1898, 'test roc_auc': 0.8172, 'test pr_auc': 0.4403, 'val ROC-AUC': 0.8199, 'test minus val ROC-AUC': -0.0027}
-18:20:46 | step 7 finished: test set used for Gradient boosting (tuned) (T08) and Neural net 64-32 + dropout 0.3 (D04) only
+19:06:03 | TEST | Dummy baseline (T01) | {'test accuracy': 0.847, 'test precision': 0.0, 'test recall': 0.0, 'test f1': 0.0, 'test roc_auc': 0.5, 'test pr_auc': 0.153, 'val ROC-AUC': 0.5, 'test minus val ROC-AUC': 0.0}
+19:06:03 | TEST | Gradient boosting (tuned) (T08) | {'test accuracy': 0.7055, 'test precision': 0.3157, 'test recall': 0.7926, 'test f1': 0.4516, 'test roc_auc': 0.8159, 'test pr_auc': 0.437, 'val ROC-AUC': 0.8199, 'test minus val ROC-AUC': -0.004}
+19:06:03 | TEST | Neural net 64-32 + dropout 0.3 (D04) | {'test accuracy': 0.8535, 'test precision': 0.615, 'test recall': 0.1123, 'test f1': 0.1898, 'test roc_auc': 0.8172, 'test pr_auc': 0.4403, 'val ROC-AUC': 0.8199, 'test minus val ROC-AUC': -0.0027}
+19:06:25 | Step 7 finished: the test set was used for Gradient boosting (tuned) (T08) and Neural net 64-32 + dropout 0.3 (D04) only

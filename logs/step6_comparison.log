@@ -1,2 +1,2 @@
-18:20:25 | T12 | Gradient boosting (tuned), mean of 5 splits | acc 0.711 | precision 0.319 | recall 0.786 | F1 0.454 | ROC-AUC 0.818 | PR-AUC 0.438 | 5.5s
-18:20:25 | D12 | Neural net 64-32, mean of 5 random starts | acc 0.855 | precision 0.571 | recall 0.199 | F1 0.295 | ROC-AUC 0.819 | PR-AUC 0.441 | 11.8s
+19:06:01 | T12 | Gradient boosting (tuned), mean of 5 splits | acc 0.711 | precision 0.319 | recall 0.786 | F1 0.454 | ROC-AUC 0.818 | PR-AUC 0.438 | 4.7s
+19:06:01 | D12 | Neural net 64-32, mean of 5 random starts | acc 0.855 | precision 0.571 | recall 0.199 | F1 0.295 | ROC-AUC 0.819 | PR-AUC 0.441 | 11.8s

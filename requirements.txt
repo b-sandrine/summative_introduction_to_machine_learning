@@ -1,10 +1,14 @@
-# Libraries used in this project (add new ones here as soon as the notebook needs them)
-numpy
-pandas
-matplotlib
-scikit-learn
-imbalanced-learn
-joblib
-tensorflow
-tensorboard
+# Tested with Python 3.11 on macOS. Install with:  pip install -r requirements.txt
+# (On Google Colab most of these are already installed. There you only need:  pip install imbalanced-learn)
+numpy==2.0.2
+pandas==2.2.3
+scipy==1.17.1
+matplotlib==3.9.4
+scikit-learn==1.6.1
+imbalanced-learn==0.14.2
+joblib==1.6.0
+tensorflow==2.18.0
+keras==3.15.1
+tensorboard==2.18.0
+ipykernel==7.4.0
 jupyter
