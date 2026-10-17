@@ -126,3 +126,20 @@ def build_preprocessor(use_engineered=True):
 def transform_to_frame(preprocessor, X):
     """Apply a fitted preprocessor and keep the column names (easier to read and debug)."""
     return pd.DataFrame(preprocessor.transform(X), columns=preprocessor.get_feature_names_out(), index=X.index)
+
+
+class ToDataFrame(BaseEstimator, TransformerMixin):
+    """
+    Put the preprocessed numbers back into a table with column names.
+    Some models were trained on a table with column names. In the saved pipeline this step sits
+    between the preprocessing and the model, so the model sees the same column names as in training.
+    """
+
+    def __init__(self, columns=None):
+        self.columns = columns
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        return pd.DataFrame(np.asarray(X), columns=self.columns)

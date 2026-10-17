@@ -89,6 +89,9 @@ class ExperimentTracker:
         keep_existing_run=True keeps the files already in the run folder (used for neural networks,
         where Keras writes the epoch-by-epoch curves into the same folder before this is called).
         """
+        # numpy numbers would be printed as np.float64(0.81) in the table, so convert them to plain numbers
+        params = {k: (v.item() if isinstance(v, np.generic) else v) for k, v in params.items()}
+
         # 1) CSV table (a row with the same exp_id is replaced, so re-running the notebook is safe)
         row = {"exp_id": exp_id, "step": step, "model": model,
                "hyperparameters": str(params), "features": features, "split": split, "eval_set": eval_set,

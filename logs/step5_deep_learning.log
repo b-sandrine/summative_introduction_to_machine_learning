@@ -1,11 +1,11 @@
-15:59:12 | D01 | Neural net 64-32 | acc 0.856 | precision 0.606 | recall 0.160 | F1 0.253 | ROC-AUC 0.820 | PR-AUC 0.443 | 17.0s
-15:59:37 | D02 | Neural net 128-64-32 | acc 0.854 | precision 0.575 | recall 0.173 | F1 0.266 | ROC-AUC 0.819 | PR-AUC 0.439 | 24.8s
-16:00:10 | D03 | Neural net 32 | acc 0.855 | precision 0.597 | recall 0.156 | F1 0.248 | ROC-AUC 0.819 | PR-AUC 0.441 | 32.7s
-16:01:02 | D04 | Neural net 64-32 + dropout 0.3 | acc 0.854 | precision 0.625 | recall 0.121 | F1 0.202 | ROC-AUC 0.820 | PR-AUC 0.444 | 51.7s
-16:01:26 | D05 | Neural net 64-32 + batch norm | acc 0.854 | precision 0.572 | recall 0.186 | F1 0.280 | ROC-AUC 0.818 | PR-AUC 0.440 | 24.1s
-16:02:00 | D06 | Neural net 64-32 + sgd + lr 0.01 | acc 0.854 | precision 0.572 | recall 0.185 | F1 0.279 | ROC-AUC 0.819 | PR-AUC 0.441 | 33.2s
-16:02:17 | D07 | Neural net 64-32 + rmsprop | acc 0.855 | precision 0.585 | recall 0.185 | F1 0.281 | ROC-AUC 0.820 | PR-AUC 0.445 | 16.8s
-16:02:39 | D08 | Neural net 64-32 + lr 0.01 | acc 0.855 | precision 0.591 | recall 0.174 | F1 0.269 | ROC-AUC 0.819 | PR-AUC 0.440 | 22.3s
-16:03:40 | D09 | Neural net 64-32 + lr 0.0001 | acc 0.854 | precision 0.586 | recall 0.162 | F1 0.254 | ROC-AUC 0.819 | PR-AUC 0.441 | 60.3s
-16:04:06 | D10 | Neural net 64-32 + class weights | acc 0.707 | precision 0.317 | recall 0.794 | F1 0.453 | ROC-AUC 0.820 | PR-AUC 0.441 | 25.4s
-16:05:22 | D11 | Neural net 64-32 + dropout 0.3 + class weights | acc 0.698 | precision 0.312 | recall 0.809 | F1 0.451 | ROC-AUC 0.820 | PR-AUC 0.443 | 76.2s
+16:41:21 | D01 | Neural net 64-32 | acc 0.856 | precision 0.606 | recall 0.160 | F1 0.253 | ROC-AUC 0.820 | PR-AUC 0.443 | 14.5s
+16:41:42 | D02 | Neural net 128-64-32 | acc 0.854 | precision 0.575 | recall 0.173 | F1 0.266 | ROC-AUC 0.819 | PR-AUC 0.439 | 20.5s
+16:42:12 | D03 | Neural net 32 | acc 0.855 | precision 0.597 | recall 0.156 | F1 0.248 | ROC-AUC 0.819 | PR-AUC 0.441 | 29.9s
+16:43:00 | D04 | Neural net 64-32 + dropout 0.3 | acc 0.854 | precision 0.625 | recall 0.121 | F1 0.202 | ROC-AUC 0.820 | PR-AUC 0.444 | 47.8s
+16:43:18 | D05 | Neural net 64-32 + batch norm | acc 0.854 | precision 0.572 | recall 0.186 | F1 0.280 | ROC-AUC 0.818 | PR-AUC 0.440 | 17.5s
+16:43:44 | D06 | Neural net 64-32 + sgd + lr 0.01 | acc 0.854 | precision 0.572 | recall 0.185 | F1 0.279 | ROC-AUC 0.819 | PR-AUC 0.441 | 25.9s
+16:44:00 | D07 | Neural net 64-32 + rmsprop | acc 0.855 | precision 0.585 | recall 0.185 | F1 0.281 | ROC-AUC 0.820 | PR-AUC 0.445 | 15.0s
+16:44:20 | D08 | Neural net 64-32 + lr 0.01 | acc 0.855 | precision 0.591 | recall 0.174 | F1 0.269 | ROC-AUC 0.819 | PR-AUC 0.440 | 20.5s
+16:45:05 | D09 | Neural net 64-32 + lr 0.0001 | acc 0.854 | precision 0.586 | recall 0.162 | F1 0.254 | ROC-AUC 0.819 | PR-AUC 0.441 | 44.0s
+16:45:22 | D10 | Neural net 64-32 + class weights | acc 0.707 | precision 0.317 | recall 0.794 | F1 0.453 | ROC-AUC 0.820 | PR-AUC 0.441 | 17.3s
+16:45:59 | D11 | Neural net 64-32 + dropout 0.3 + class weights | acc 0.698 | precision 0.312 | recall 0.809 | F1 0.451 | ROC-AUC 0.820 | PR-AUC 0.443 | 37.1s
